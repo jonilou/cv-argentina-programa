@@ -8,6 +8,11 @@
     --font-p: 'Roboto', sans-serif;
 }
 
+html,body {
+    padding: 0px;
+    margin: 0 auto;
+}
+
 h1{
     font-size: 3em;
     font-family: var(--font-title);
@@ -60,17 +65,43 @@ p {
 }
 
 .container section div {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .head .foto {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .head .foto img {
-    width: 60%;
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
 
+.info-card {
+    display: flex;
+    align-items: center;
+}
+
+.info-card .text {
+    font-size: 1.5em;
+    font-family: var(--font-p);
+    font-weight: 100;
+    color: var(--color-primary);
+}
+
+ul li {
+    color: var(--color-primary);
+    font-family: var(--font-p);
+    font-size: 1em;
+    margin: 1rem;
+}
