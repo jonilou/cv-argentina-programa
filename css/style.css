@@ -11,6 +11,7 @@
 html,body {
     padding: 0px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 h1{
@@ -56,6 +57,7 @@ p {
 .container {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .container section {
@@ -90,6 +92,7 @@ p {
 .info-card {
     display: flex;
     align-items: center;
+    justify-content:flex-start;
 }
 
 .info-card .text {
@@ -105,3 +108,16 @@ ul li {
     font-size: 1em;
     margin: 1rem;
 }
+
+
+@media (max-width: 800px) {
+    .container section {
+      flex-direction: column;
+    }
+    .container section div {
+        width: 100%;
+    }
+    .info-card {
+        flex-direction: column;
+    }
+  }
