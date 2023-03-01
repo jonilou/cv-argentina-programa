@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --color-primary: rgba(23, 23, 75, 0.87);
+    --font-title: 'Raleway', sans-serif;
+    --font-p: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    font-family: var(--font-title);
+    color:var(--color-primary);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    text-transform: capitalize;
+    }
+
+h3 {
+    font-size: 1.5em;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+p {
+    padding: 0 2rem;
+    font-size: 1.5em;
+    font-family: var(--font-p);
+    font-weight: 1;
+}
+.width-30 {
+    width: 30%;
+}
+.width-70 {
+    width: 70%;
+}
+.bg-blue {
+    background-color: var(--color-primary);
+}
+.color-white {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container section div {
+    padding: 1rem;
+}
+
+.head .foto {
+    display: flex;
+    justify-content: center;
+}
+
+.head .foto img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+
