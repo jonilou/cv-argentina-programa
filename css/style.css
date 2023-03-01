@@ -110,7 +110,7 @@ ul li {
 }
 
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .container section {
       flex-direction: column;
     }
